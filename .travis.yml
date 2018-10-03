@@ -10,4 +10,5 @@ install:
 script:
   - npm run lint
   - npm run test:unit
+  - npm run test:coveralls
   - npm run build

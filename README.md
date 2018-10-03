@@ -1,6 +1,7 @@
 # Vue Hello World & Travis CI
 [![Build Status](https://travis-ci.org/v2hummel/vuetest.svg?branch=master)](https://travis-ci.org/v2hummel/vuetest)
 [![Coverage Status](https://coveralls.io/repos/github/v2hummel/vuetest/badge.svg)](https://coveralls.io/github/v2hummel/vuetest)
+
 ### Project setup
 ```
 npm install
