@@ -1,21 +1,22 @@
-# hello-world
+# Vue Hello World & Travis CI
+[![Build Status](https://travis-ci.org/v2hummel/vuetest.svg?branch=master)](https://travis-ci.org/v2hummel/vuetest)
 
-## Project setup
+### Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+##### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+##### Compiles and hot-reloads for development
 ```
 npm run build
 ```
 
-### Lints and fixes files
+##### Compiles and hot-reloads for development
 ```
 npm run lint
 ```
