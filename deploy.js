@@ -37,7 +37,7 @@ const config = {
   deleteRemote: false // empty target folder on remote?
 }
 
-ftpDeploy.on('uploading', function(data) { // while uploading a file
+ftpDeploy.on('uploading', function() { // while uploading a file
     // process.stdout.write('Uploading File ' + data.transferredFileCount + ' / ' + data.totalFilesCount + ' -> ' + chalk.blue(data.filename) + '...');
 });
 
