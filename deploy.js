@@ -38,14 +38,14 @@ const config = {
 }
 
 ftpDeploy.on('uploading', function(data) { // while uploading a file
-    process.stdout.write('Uploading File ' + data.transferredFileCount + ' / ' + data.totalFilesCount + ' -> ' + chalk.blue(data.filename) + '...');
+    // process.stdout.write('Uploading File ' + data.transferredFileCount + ' / ' + data.totalFilesCount + ' -> ' + chalk.blue(data.filename) + '...');
 });
 
 ftpDeploy.on('uploaded', function(data) { // when file is uploaded
   newestFileData = data; // write to global store
-  console.log(
-    chalk.green(' uploaded!')
-  );
+  // console.log(
+  //   chalk.green(' uploaded!')
+  // );
 });
 
 // VERSIONING
