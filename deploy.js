@@ -37,15 +37,18 @@ const config = {
   deleteRemote: false // empty target folder on remote?
 }
 
-ftpDeploy.on('uploading', function() { // while uploading a file
-    // process.stdout.write('Uploading File ' + data.transferredFileCount + ' / ' + data.totalFilesCount + ' -> ' + chalk.blue(data.filename) + '...');
+ftpDeploy.on('uploading', function(data) { // while uploading a file
+    process.stdout.write('Uploading File ' + data.transferredFileCount + ' / ' + data.totalFilesCount + ' -> ' + chalk.blue(data.filename) + '...');
 });
 
 ftpDeploy.on('uploaded', function(data) { // when file is uploaded
   newestFileData = data; // write to global store
-  // console.log(
-  //   chalk.green(' uploaded!')
-  // );
+  console.log(
+    chalk.green(' uploaded!')
+  );
+});
+ftpDeploy.on('upload-error', function (data) {
+  console.log(data);
 });
 
 // VERSIONING
