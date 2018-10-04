@@ -10,8 +10,8 @@ script:
   - npm run test:coveralls
   - npm run build
 deploy:
+  skip_cleanup: true
   provider: script
   script: npm run deploy
   on:
-    all_branches: true
-    condition: $TRAVIS_BRANCH =~ ^master$
+    branch: master
