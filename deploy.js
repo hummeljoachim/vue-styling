@@ -12,7 +12,7 @@ const chalk = require('chalk');
 const env = process.env;
 const fs = require('fs');
 
-const rootDir = __dirname + '/dist'; // local dir to upload from
+const rootDir = './dist'; // local dir to upload from
 
 dotenv.config({path: '.env.development.local'}); // path to your env file
 
