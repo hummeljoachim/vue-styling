@@ -22,7 +22,7 @@ let newestFileData = {}; // global data store
 if ( // check if all the necessary environment variables are set
   env.DEPLOY_USER && env.DEPLOY_PW && env.DEPLOY_HOST && env.DEPLOY_PORT && env.DEPLOY_REMOTE_ROOT ){ console.log(chalk.green('Checked environment variables...'));
 }else{ // give some advice, if not
-  console.log(chalk.red('Missing environment variables!\nMake sure you have defined:\n\nDEPLOY_USER\nDEPLOY_PW\nDEPLOY_HOST\nDEPLOY_PORT\nDEPLOY_REMOTE_ROOT\n')); process.exit() // exit the script
+  console.log(chalk.red('Missing environment variables!\nMake sure you have defined:\n\nDEPLOY_USER\nDEPLOY_PW\nDEPLOY_HOST\nDEPLOY_PORT\nDEPLOY_REMOTE_ROOT\n')); process.exit(1); // exit the script
 }
 
 // CONFIG
