@@ -9,9 +9,9 @@ script:
   - npm run test:unit
   - npm run test:coveralls
   - npm run build
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: npm run deploy
-  on:
-    branch: master
+# deploy:
+#   skip_cleanup: true
+#   provider: script
+#   script: npm run deploy
+#   on:
+#     branch: master
