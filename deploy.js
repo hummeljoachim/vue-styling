@@ -12,7 +12,7 @@ const chalk = require('chalk');
 const env = process.env;
 const fs = require('fs');
 
-const rootDir = './dist'; // local dir to upload from
+const rootDir = __dirname + '/dist'; // local dir to upload from
 
 dotenv.config({path: '.env.development.local'}); // path to your env file
 
@@ -46,9 +46,6 @@ ftpDeploy.on('uploaded', function(data) { // when file is uploaded
   console.log(
     chalk.green(' uploaded!')
   );
-});
-ftpDeploy.on('upload-error', function (data) {
-  console.log(data);
 });
 
 // VERSIONING
