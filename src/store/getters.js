@@ -1,7 +1,0 @@
-/* */
-
-// Getters
-
-export default{
-  
-};

@@ -1,9 +1,0 @@
-/* */
-
-// State
-
-export default ({
-  global: {
-    
-  },
-});
